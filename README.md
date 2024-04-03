@@ -1,2 +1,2 @@
 # frontStudy
-html, css 개인 공부
+김버그의 html, css 개인 공부

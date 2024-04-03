@@ -1,0 +1,40 @@
+<!--사용자로부터 input을 받기 위한 태그-->
+<!-- <form action="API 주소" method="GET|POST">입력</form> -->
+
+<!--input-->
+<!--number, text, email, ...-->
+
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Form - Input</title>
+    <!-- <link rel="stylesheet" href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="#" method="get">
+        <label for="user-name">이름</label>
+        <input type="text" placeholder="이름" id="user-name" maxlength="13" minlength="5" required/><br>
+        <input type="text" placeholder="id를 입력해주세요." maxlength="13" minlength="5" required disabled value="최윤서"/>
+    </form>
+    <form action="" method="GET">
+        <!--input type을 지정해주는 이유는 유효성 검사. 서버에서 확인하는 것보다 프론트단에서 확인하는 게 더 빠르기 때문-->
+        <input type="email" placeholder="이메일을 입력하세요"/></br>
+        <label for="user-password">비밀번호</label>
+        <input type="password" placeholder="비밀먼호를 입력해주세요" minlength="6" maxlength="10" id="user-password"/>
+    </form>
+
+    <form action="" method="GET">
+        <input type="url" placeholder="웹 포트폴리오 url을 적으시오"/>
+    </form>
+
+    <form action="#" method="GET">
+        <input type="number" placeholder="나이를 입력하세요(12세 이상 122세 이하)." max="122" min="12"></br>
+        <label for="user-pic">사용자 사진</label>
+        <input type="file" accept=".png, .jpg" id="user-pic"/>
+    </form>
+</body>
+</html>

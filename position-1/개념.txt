@@ -1,0 +1,5 @@
+static - 모든 요소의 기본 position값
+relative - 다른 요소를 무너뜨리지 않고 혼자 움직임
+absolute - 
+fixed
+sticky

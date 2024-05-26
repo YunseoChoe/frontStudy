@@ -1,13 +1,40 @@
-/* 제일 첫번째 설정, 모든 요소 */
-* { 
+/* *: 모든 요소들, border-box를 기준으로 */
+* {
     box-sizing: border-box;
 }
 
+/* html의 모든 요소들은 box로 표현됨 */
+/* class 선택자 사용 */
 .box {
-    width: 480px;
-    height: 480px;
-    background-color: aqua;
-    color: white;
+    box-sizing: border-box;
+    width: 480px; /* content뿐만 아니라 content + border 모두 포함 */
+    height: 480px; /* content뿐만 아니라 content + border 모두 포함 */
+    background-color: rgb(47, 238, 13);
+    color: rgb(0, 0, 0);
     padding: 40px 50px;
-    /* box-sizing: border-box; */
+    border: 10px solid black;
+    /* border-radius: 50%; */
+    /* border-top-left-radius: 10px; */
+    /* border-top: 5px solid red; */
+    /* border-bottom: 5px solid blue;  */
+    margin-top: 50px;
+}
+
+/*
+content의 가로: width, 세로: height
+padding: 안쪽 여백, content와 border 사이의 공간을 나타내는 padding
+border: 테두리 (1px solid #000, 굵기 스타일 색상)
+border-radius: 둥글어짐
+margin: 바깥 여백
+*/
+
+.ys {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(121, 170, 57);
+}
+
+.sw {
+    display: inline-block;
 }

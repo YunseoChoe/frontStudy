@@ -1,5 +1,7 @@
-static - 모든 요소의 기본 position값
+static - 모든 요소의 기본 position값, 일반적인 값
 relative - 다른 요소를 무너뜨리지 않고 혼자 움직임
-absolute - 
-fixed
+absolute - 집 나간 자식이 됨, display값이 block이 됨
+fixed - viewport(브라우저 창의 전체 크기)를 기준으로 
 sticky
+
+

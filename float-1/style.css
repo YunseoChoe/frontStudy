@@ -22,7 +22,7 @@ ul {
   padding-left: 0;
 }
 
-/* .tab-menu {
+/* .tab-menu { 
   overflow: hidden;
 } */
 
@@ -33,7 +33,7 @@ ul {
 }
 
 .tab-menu::after {
-  content: ''; /* 가상 요소 */
+  content: ''; 
   display: block;
   clear: left;
 }
@@ -55,4 +55,10 @@ ul {
 .tab-menu-item.selected a {
   color: #2860E1;
   font-weight: 500;
+} 
+
+.parent::after {
+  content: "";
+  display: block;
+  clear: both;
 }

@@ -15,7 +15,6 @@
   }
   
   /* ▼ WHERE YOUR CODE BEGINS */
-  
   .user-card {
     max-width: 240px;
     padding: 8px 12px;
@@ -24,7 +23,7 @@
   }
   
   .user-card::after {
-    content: "";
+    content: '';
     display: block;
     clear: left;
   }
@@ -41,14 +40,17 @@
     width: 100%;
     height: auto;
     border-radius: 50%;
+    display: block;
   }
   
   .user-photo .user-status {
     position: absolute;
+    display: block; /* position을 지정해놓으면 자동으로 block이 됨*/
+    right: -2px;
     bottom: 0;
     right: 0;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border: 2px solid #fff;
     border-radius: 50%;
     background-color: #21d891;
